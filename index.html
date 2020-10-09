@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/vendor/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Prem <span>Kiran</span></h1>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            👋 Hello, everyone! I am an aspiring full stack developer from India.
+
+            I am currently working on completing the freeCodeCamp full stack certification.
+            I plan to complete this certification by building the required projects as I
+            believe it may help me to become a confident developer.
+
+            Apart from this I am currently doing the 100DaysOfCode challenge and also aim to
+            participate in this year's Hacktoberfest event as I see this as an opportunity to
+            start contributing to open source and also get some goodies.
+        </p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="img-container">
+            <div class="row">
+                <img altt="html logo" src="https://img.icons8.com/color/96/000000/html-5.png" />
+                <img altt="css logo" src="https://img.icons8.com/color/96/000000/css3.png" />
+                <img altt="js logo" src="https://img.icons8.com/color/96/000000/javascript.png" />
+                <img altt="reactjs logo" src="https://img.icons8.com/color/96/000000/react-native.png" />
+                <img altt="nodejs logo" src="https://img.icons8.com/color/96/000000/nodejs.png" />
+            </div>
+            <div class="row">
+                <img alt="vscode logo" src="https://img.icons8.com/fluent/96/000000/visual-studio-code-2019.png" />
+                <img alt="python logo" src="https://img.icons8.com/color/96/000000/python.png" />
+                <img alt="pycharm logo" src="https://img.icons8.com/color/96/000000/pycharm.png" />
+                <img alt="postgresql logo" src="https://img.icons8.com/color/96/000000/postgreesql.png" />
+                <img alt="git" src="https://img.icons8.com/color/96/000000/git.png" />
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-tile">
+                <div class="project-tile-image">
+                    <img src="https://codepen.io/premkiran7/pen/RwayGqJ/image/small.png"
+                        alt="tribute page project image">
+                </div>
+                <div class="project-tile-body">
+                    <p class="project-tile-header">
+                        Tribute Page
+                        <a target="_blank" href="https://github.com/premkiran7/freeCodeCamp-projects">
+                            <img alt="svgImg"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD48ZyBmaWxsPSIjMWFiMTIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik04NiwyMS41Yy0zNS42MzAzNywwIC02NC41LDI4Ljg2OTYzIC02NC41LDY0LjVjMCwyOC40OTE3IDE4LjQ3NjU2LDUyLjY3OTIgNDQuMTEyNzksNjEuMjAzNjFjMy4yMzM0LDAuNTg3ODkgNC40MDkxOCwtMS4zODU3NCA0LjQwOTE4LC0zLjEwNzQyYzAsLTEuNTMyNzEgLTAuMDYyOTksLTUuNTg0OTYgLTAuMDgzOTgsLTEwLjk1OTk2Yy0xNy45NTE2NiwzLjg4NDI4IC0yMS43MzA5NiwtOC42NTAzOSAtMjEuNzMwOTYsLTguNjUwMzljLTIuOTM5NDUsLTcuNDUzNjEgLTcuMTU5NjcsLTkuNDQ4MjQgLTcuMTU5NjcsLTkuNDQ4MjRjLTUuODU3OTEsLTMuOTg5MjYgMC40NDA5MiwtMy45MDUyOCAwLjQ0MDkyLC0zLjkwNTI4YzYuNDY2OCwwLjQ2MTkyIDkuODY4MTcsNi42MzQ3NyA5Ljg2ODE3LDYuNjM0NzdjNS43NTI5Myw5Ljg2ODE3IDE1LjA5NjE5LDcuMDEyNyAxOC43NzA1MSw1LjM3NWMwLjU4Nzg5LC00LjE3ODIyIDIuMjY3NTgsLTcuMDEyNjkgNC4wOTQyNCwtOC42MjkzOWMtMTQuMzE5MzQsLTEuNjE2NyAtMjkuMzczNTQsLTcuMTU5NjcgLTI5LjM3MzU0LC0zMS44NzIwN2MwLC03LjA1NDY5IDIuNTE5NTMsLTEyLjgwNzYxIDYuNjM0NzcsLTE3LjMyMTc4Yy0wLjY1MDg4LC0xLjYxNjcgLTIuODc2NDYsLTguMTg4NDggMC42Mjk4OSwtMTcuMDY5ODJjMCwwIDUuNDE2OTksLTEuNzIxNjggMTcuNzQxNyw2LjYxMzc3YzUuMTQ0MDQsLTEuNDI3NzMgMTAuNjY2MDIsLTIuMTQxNiAxNi4xNDU5OSwtMi4xNjI1OWM1LjQ3OTk4LDAuMDIwOTkgMTEuMDAxOTUsMC43MzQ4NiAxNi4xNDU5OSwyLjE2MjU5YzEyLjMyNDcxLC04LjMzNTQ1IDE3LjcyMDcsLTYuNjEzNzcgMTcuNzIwNywtNi42MTM3N2MzLjUyNzM0LDguODgxMzQgMS4zMjI3NiwxNS40NTMxMyAwLjY1MDg4LDE3LjA2OTgyYzQuMTM2MjMsNC41MTQxNiA2LjYxMzc3LDEwLjI2NzA5IDYuNjEzNzcsMTcuMzIxNzhjMCwyNC43NzUzOSAtMTUuMDc1MiwzMC4yMTMzOCAtMjkuNDM2NTMsMzEuODMwMDhjMi4zMDk1NywxLjk3MzY0IDQuMzY3MTksNS45MjA5IDQuMzY3MTksMTEuOTI1NzhjMCw4LjYyOTQgLTAuMDYyOTgsMTUuNTc5MSAtMC4wNjI5OCwxNy42OTk3MWMwLDEuNzIxNjggMS4xNTQ3OCwzLjczNzMgNC40MzAxNywzLjEwNzQyYzI1LjYxNTIzLC04LjU0NTQxIDQ0LjA3MDgsLTMyLjcxMTkyIDQ0LjA3MDgsLTYxLjIwMzYxYzAsLTM1LjYzMDM3IC0yOC44Njk2MywtNjQuNSAtNjQuNSwtNjQuNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" />
+                        </a>
+                    </p>
+                    <p class="project-tile-content">
+                        A tribute page built as part of the freeCodeCamp Responsive Web Design Certification
+                    </p>
+                </div>
+                <div class="project-tile-tags">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-tile-image">
+                    <img src="https://codepen.io/premkiran7/pen/dyMjYBy/image/small.png"
+                        alt="survey form project image">
+                </div>
+                <div class="project-tile-body">
+                    <p class="project-tile-header">
+                        Survey Form
+                        <a target="_blank" href="https://github.com/premkiran7/freeCodeCamp-projects">
+                            <img alt="svgImg"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD48ZyBmaWxsPSIjMWFiMTIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik04NiwyMS41Yy0zNS42MzAzNywwIC02NC41LDI4Ljg2OTYzIC02NC41LDY0LjVjMCwyOC40OTE3IDE4LjQ3NjU2LDUyLjY3OTIgNDQuMTEyNzksNjEuMjAzNjFjMy4yMzM0LDAuNTg3ODkgNC40MDkxOCwtMS4zODU3NCA0LjQwOTE4LC0zLjEwNzQyYzAsLTEuNTMyNzEgLTAuMDYyOTksLTUuNTg0OTYgLTAuMDgzOTgsLTEwLjk1OTk2Yy0xNy45NTE2NiwzLjg4NDI4IC0yMS43MzA5NiwtOC42NTAzOSAtMjEuNzMwOTYsLTguNjUwMzljLTIuOTM5NDUsLTcuNDUzNjEgLTcuMTU5NjcsLTkuNDQ4MjQgLTcuMTU5NjcsLTkuNDQ4MjRjLTUuODU3OTEsLTMuOTg5MjYgMC40NDA5MiwtMy45MDUyOCAwLjQ0MDkyLC0zLjkwNTI4YzYuNDY2OCwwLjQ2MTkyIDkuODY4MTcsNi42MzQ3NyA5Ljg2ODE3LDYuNjM0NzdjNS43NTI5Myw5Ljg2ODE3IDE1LjA5NjE5LDcuMDEyNyAxOC43NzA1MSw1LjM3NWMwLjU4Nzg5LC00LjE3ODIyIDIuMjY3NTgsLTcuMDEyNjkgNC4wOTQyNCwtOC42MjkzOWMtMTQuMzE5MzQsLTEuNjE2NyAtMjkuMzczNTQsLTcuMTU5NjcgLTI5LjM3MzU0LC0zMS44NzIwN2MwLC03LjA1NDY5IDIuNTE5NTMsLTEyLjgwNzYxIDYuNjM0NzcsLTE3LjMyMTc4Yy0wLjY1MDg4LC0xLjYxNjcgLTIuODc2NDYsLTguMTg4NDggMC42Mjk4OSwtMTcuMDY5ODJjMCwwIDUuNDE2OTksLTEuNzIxNjggMTcuNzQxNyw2LjYxMzc3YzUuMTQ0MDQsLTEuNDI3NzMgMTAuNjY2MDIsLTIuMTQxNiAxNi4xNDU5OSwtMi4xNjI1OWM1LjQ3OTk4LDAuMDIwOTkgMTEuMDAxOTUsMC43MzQ4NiAxNi4xNDU5OSwyLjE2MjU5YzEyLjMyNDcxLC04LjMzNTQ1IDE3LjcyMDcsLTYuNjEzNzcgMTcuNzIwNywtNi42MTM3N2MzLjUyNzM0LDguODgxMzQgMS4zMjI3NiwxNS40NTMxMyAwLjY1MDg4LDE3LjA2OTgyYzQuMTM2MjMsNC41MTQxNiA2LjYxMzc3LDEwLjI2NzA5IDYuNjEzNzcsMTcuMzIxNzhjMCwyNC43NzUzOSAtMTUuMDc1MiwzMC4yMTMzOCAtMjkuNDM2NTMsMzEuODMwMDhjMi4zMDk1NywxLjk3MzY0IDQuMzY3MTksNS45MjA5IDQuMzY3MTksMTEuOTI1NzhjMCw4LjYyOTQgLTAuMDYyOTgsMTUuNTc5MSAtMC4wNjI5OCwxNy42OTk3MWMwLDEuNzIxNjggMS4xNTQ3OCwzLjczNzMgNC40MzAxNywzLjEwNzQyYzI1LjYxNTIzLC04LjU0NTQxIDQ0LjA3MDgsLTMyLjcxMTkyIDQ0LjA3MDgsLTYxLjIwMzYxYzAsLTM1LjYzMDM3IC0yOC44Njk2MywtNjQuNSAtNjQuNSwtNjQuNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" />
+                        </a>
+                    </p>
+                    <p class="project-tile-content">
+                        A survey form built as part of the freeCodeCamp Responsive Web Design Certification
+                    </p>
+                </div>
+                <div class="project-tile-tags">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-tile-image">
+                    <img src="https://codepen.io/premkiran7/pen/VwaGZod/image/small.png"
+                        alt="product landing page project image">
+                </div>
+                <div class="project-tile-body">
+                    <p class="project-tile-header">
+                        Product Landing Page
+                        <a target="_blank" href="https://github.com/premkiran7/freeCodeCamp-projects">
+                            <img alt="svgImg"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD48ZyBmaWxsPSIjMWFiMTIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik04NiwyMS41Yy0zNS42MzAzNywwIC02NC41LDI4Ljg2OTYzIC02NC41LDY0LjVjMCwyOC40OTE3IDE4LjQ3NjU2LDUyLjY3OTIgNDQuMTEyNzksNjEuMjAzNjFjMy4yMzM0LDAuNTg3ODkgNC40MDkxOCwtMS4zODU3NCA0LjQwOTE4LC0zLjEwNzQyYzAsLTEuNTMyNzEgLTAuMDYyOTksLTUuNTg0OTYgLTAuMDgzOTgsLTEwLjk1OTk2Yy0xNy45NTE2NiwzLjg4NDI4IC0yMS43MzA5NiwtOC42NTAzOSAtMjEuNzMwOTYsLTguNjUwMzljLTIuOTM5NDUsLTcuNDUzNjEgLTcuMTU5NjcsLTkuNDQ4MjQgLTcuMTU5NjcsLTkuNDQ4MjRjLTUuODU3OTEsLTMuOTg5MjYgMC40NDA5MiwtMy45MDUyOCAwLjQ0MDkyLC0zLjkwNTI4YzYuNDY2OCwwLjQ2MTkyIDkuODY4MTcsNi42MzQ3NyA5Ljg2ODE3LDYuNjM0NzdjNS43NTI5Myw5Ljg2ODE3IDE1LjA5NjE5LDcuMDEyNyAxOC43NzA1MSw1LjM3NWMwLjU4Nzg5LC00LjE3ODIyIDIuMjY3NTgsLTcuMDEyNjkgNC4wOTQyNCwtOC42MjkzOWMtMTQuMzE5MzQsLTEuNjE2NyAtMjkuMzczNTQsLTcuMTU5NjcgLTI5LjM3MzU0LC0zMS44NzIwN2MwLC03LjA1NDY5IDIuNTE5NTMsLTEyLjgwNzYxIDYuNjM0NzcsLTE3LjMyMTc4Yy0wLjY1MDg4LC0xLjYxNjcgLTIuODc2NDYsLTguMTg4NDggMC42Mjk4OSwtMTcuMDY5ODJjMCwwIDUuNDE2OTksLTEuNzIxNjggMTcuNzQxNyw2LjYxMzc3YzUuMTQ0MDQsLTEuNDI3NzMgMTAuNjY2MDIsLTIuMTQxNiAxNi4xNDU5OSwtMi4xNjI1OWM1LjQ3OTk4LDAuMDIwOTkgMTEuMDAxOTUsMC43MzQ4NiAxNi4xNDU5OSwyLjE2MjU5YzEyLjMyNDcxLC04LjMzNTQ1IDE3LjcyMDcsLTYuNjEzNzcgMTcuNzIwNywtNi42MTM3N2MzLjUyNzM0LDguODgxMzQgMS4zMjI3NiwxNS40NTMxMyAwLjY1MDg4LDE3LjA2OTgyYzQuMTM2MjMsNC41MTQxNiA2LjYxMzc3LDEwLjI2NzA5IDYuNjEzNzcsMTcuMzIxNzhjMCwyNC43NzUzOSAtMTUuMDc1MiwzMC4yMTMzOCAtMjkuNDM2NTMsMzEuODMwMDhjMi4zMDk1NywxLjk3MzY0IDQuMzY3MTksNS45MjA5IDQuMzY3MTksMTEuOTI1NzhjMCw4LjYyOTQgLTAuMDYyOTgsMTUuNTc5MSAtMC4wNjI5OCwxNy42OTk3MWMwLDEuNzIxNjggMS4xNTQ3OCwzLjczNzMgNC40MzAxNywzLjEwNzQyYzI1LjYxNTIzLC04LjU0NTQxIDQ0LjA3MDgsLTMyLjcxMTkyIDQ0LjA3MDgsLTYxLjIwMzYxYzAsLTM1LjYzMDM3IC0yOC44Njk2MywtNjQuNSAtNjQuNSwtNjQuNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" />
+                        </a>
+                    </p>
+                    <p class="project-tile-content">
+                        A product landing page built as part of the freeCodeCamp Responsive Web Design Certification
+                    </p>
+                </div>
+                <div class="project-tile-tags">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-tile-image">
+                    <img src="https://codepen.io/premkiran7/pen/ZEWModP/image/small.png"
+                        alt="technical documentation page project image">
+                </div>
+                <div class="project-tile-body">
+                    <p class="project-tile-header">
+                        Technical Docs Page
+                        <a target="_blank" href="https://github.com/premkiran7/freeCodeCamp-projects">
+                            <img alt="svgImg"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD48ZyBmaWxsPSIjMWFiMTIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik04NiwyMS41Yy0zNS42MzAzNywwIC02NC41LDI4Ljg2OTYzIC02NC41LDY0LjVjMCwyOC40OTE3IDE4LjQ3NjU2LDUyLjY3OTIgNDQuMTEyNzksNjEuMjAzNjFjMy4yMzM0LDAuNTg3ODkgNC40MDkxOCwtMS4zODU3NCA0LjQwOTE4LC0zLjEwNzQyYzAsLTEuNTMyNzEgLTAuMDYyOTksLTUuNTg0OTYgLTAuMDgzOTgsLTEwLjk1OTk2Yy0xNy45NTE2NiwzLjg4NDI4IC0yMS43MzA5NiwtOC42NTAzOSAtMjEuNzMwOTYsLTguNjUwMzljLTIuOTM5NDUsLTcuNDUzNjEgLTcuMTU5NjcsLTkuNDQ4MjQgLTcuMTU5NjcsLTkuNDQ4MjRjLTUuODU3OTEsLTMuOTg5MjYgMC40NDA5MiwtMy45MDUyOCAwLjQ0MDkyLC0zLjkwNTI4YzYuNDY2OCwwLjQ2MTkyIDkuODY4MTcsNi42MzQ3NyA5Ljg2ODE3LDYuNjM0NzdjNS43NTI5Myw5Ljg2ODE3IDE1LjA5NjE5LDcuMDEyNyAxOC43NzA1MSw1LjM3NWMwLjU4Nzg5LC00LjE3ODIyIDIuMjY3NTgsLTcuMDEyNjkgNC4wOTQyNCwtOC42MjkzOWMtMTQuMzE5MzQsLTEuNjE2NyAtMjkuMzczNTQsLTcuMTU5NjcgLTI5LjM3MzU0LC0zMS44NzIwN2MwLC03LjA1NDY5IDIuNTE5NTMsLTEyLjgwNzYxIDYuNjM0NzcsLTE3LjMyMTc4Yy0wLjY1MDg4LC0xLjYxNjcgLTIuODc2NDYsLTguMTg4NDggMC42Mjk4OSwtMTcuMDY5ODJjMCwwIDUuNDE2OTksLTEuNzIxNjggMTcuNzQxNyw2LjYxMzc3YzUuMTQ0MDQsLTEuNDI3NzMgMTAuNjY2MDIsLTIuMTQxNiAxNi4xNDU5OSwtMi4xNjI1OWM1LjQ3OTk4LDAuMDIwOTkgMTEuMDAxOTUsMC43MzQ4NiAxNi4xNDU5OSwyLjE2MjU5YzEyLjMyNDcxLC04LjMzNTQ1IDE3LjcyMDcsLTYuNjEzNzcgMTcuNzIwNywtNi42MTM3N2MzLjUyNzM0LDguODgxMzQgMS4zMjI3NiwxNS40NTMxMyAwLjY1MDg4LDE3LjA2OTgyYzQuMTM2MjMsNC41MTQxNiA2LjYxMzc3LDEwLjI2NzA5IDYuNjEzNzcsMTcuMzIxNzhjMCwyNC43NzUzOSAtMTUuMDc1MiwzMC4yMTMzOCAtMjkuNDM2NTMsMzEuODMwMDhjMi4zMDk1NywxLjk3MzY0IDQuMzY3MTksNS45MjA5IDQuMzY3MTksMTEuOTI1NzhjMCw4LjYyOTQgLTAuMDYyOTgsMTUuNTc5MSAtMC4wNjI5OCwxNy42OTk3MWMwLDEuNzIxNjggMS4xNTQ3OCwzLjczNzMgNC40MzAxNywzLjEwNzQyYzI1LjYxNTIzLC04LjU0NTQxIDQ0LjA3MDgsLTMyLjcxMTkyIDQ0LjA3MDgsLTYxLjIwMzYxYzAsLTM1LjYzMDM3IC0yOC44Njk2MywtNjQuNSAtNjQuNSwtNjQuNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" />
+                        </a>
+                    </p>
+                    <p class="project-tile-content">
+                        A technical documentation page built as part of the freeCodeCamp Responsive Web Design
+                        Certification
+                    </p>
+                </div>
+                <div class="project-tile-tags">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-tile-image">
+                    <img src="https://codepen.io/premkiran7/pen/dyMjMPR/image/small.png" alt="calculator project image">
+                </div>
+                <div class="project-tile-body">
+                    <p class="project-tile-header">
+                        Calculator
+                        <a target="_blank" href="https://github.com/premkiran7/freeCodeCamp-projects">
+                            <img alt="svgImg"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD48ZyBmaWxsPSIjMWFiMTIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik04NiwyMS41Yy0zNS42MzAzNywwIC02NC41LDI4Ljg2OTYzIC02NC41LDY0LjVjMCwyOC40OTE3IDE4LjQ3NjU2LDUyLjY3OTIgNDQuMTEyNzksNjEuMjAzNjFjMy4yMzM0LDAuNTg3ODkgNC40MDkxOCwtMS4zODU3NCA0LjQwOTE4LC0zLjEwNzQyYzAsLTEuNTMyNzEgLTAuMDYyOTksLTUuNTg0OTYgLTAuMDgzOTgsLTEwLjk1OTk2Yy0xNy45NTE2NiwzLjg4NDI4IC0yMS43MzA5NiwtOC42NTAzOSAtMjEuNzMwOTYsLTguNjUwMzljLTIuOTM5NDUsLTcuNDUzNjEgLTcuMTU5NjcsLTkuNDQ4MjQgLTcuMTU5NjcsLTkuNDQ4MjRjLTUuODU3OTEsLTMuOTg5MjYgMC40NDA5MiwtMy45MDUyOCAwLjQ0MDkyLC0zLjkwNTI4YzYuNDY2OCwwLjQ2MTkyIDkuODY4MTcsNi42MzQ3NyA5Ljg2ODE3LDYuNjM0NzdjNS43NTI5Myw5Ljg2ODE3IDE1LjA5NjE5LDcuMDEyNyAxOC43NzA1MSw1LjM3NWMwLjU4Nzg5LC00LjE3ODIyIDIuMjY3NTgsLTcuMDEyNjkgNC4wOTQyNCwtOC42MjkzOWMtMTQuMzE5MzQsLTEuNjE2NyAtMjkuMzczNTQsLTcuMTU5NjcgLTI5LjM3MzU0LC0zMS44NzIwN2MwLC03LjA1NDY5IDIuNTE5NTMsLTEyLjgwNzYxIDYuNjM0NzcsLTE3LjMyMTc4Yy0wLjY1MDg4LC0xLjYxNjcgLTIuODc2NDYsLTguMTg4NDggMC42Mjk4OSwtMTcuMDY5ODJjMCwwIDUuNDE2OTksLTEuNzIxNjggMTcuNzQxNyw2LjYxMzc3YzUuMTQ0MDQsLTEuNDI3NzMgMTAuNjY2MDIsLTIuMTQxNiAxNi4xNDU5OSwtMi4xNjI1OWM1LjQ3OTk4LDAuMDIwOTkgMTEuMDAxOTUsMC43MzQ4NiAxNi4xNDU5OSwyLjE2MjU5YzEyLjMyNDcxLC04LjMzNTQ1IDE3LjcyMDcsLTYuNjEzNzcgMTcuNzIwNywtNi42MTM3N2MzLjUyNzM0LDguODgxMzQgMS4zMjI3NiwxNS40NTMxMyAwLjY1MDg4LDE3LjA2OTgyYzQuMTM2MjMsNC41MTQxNiA2LjYxMzc3LDEwLjI2NzA5IDYuNjEzNzcsMTcuMzIxNzhjMCwyNC43NzUzOSAtMTUuMDc1MiwzMC4yMTMzOCAtMjkuNDM2NTMsMzEuODMwMDhjMi4zMDk1NywxLjk3MzY0IDQuMzY3MTksNS45MjA5IDQuMzY3MTksMTEuOTI1NzhjMCw4LjYyOTQgLTAuMDYyOTgsMTUuNTc5MSAtMC4wNjI5OCwxNy42OTk3MWMwLDEuNzIxNjggMS4xNTQ3OCwzLjczNzMgNC40MzAxNywzLjEwNzQyYzI1LjYxNTIzLC04LjU0NTQxIDQ0LjA3MDgsLTMyLjcxMTkyIDQ0LjA3MDgsLTYxLjIwMzYxYzAsLTM1LjYzMDM3IC0yOC44Njk2MywtNjQuNSAtNjQuNSwtNjQuNXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" />
+                        </a>
+                    </p>
+                    <p class="project-tile-content">
+                        A simple calculator built when working on the Frontend Masters curriculum
+                    </p>
+                </div>
+                <div class="project-tile-tags">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Get in touch</h2>
+        <form class="form-container" action="" method="post">
+            <input required id="name" type="text" placeholder="Name">
+            <input required type="email" placeholder="Email">
+            <textarea required name="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="btn">SEND</button>
+        </form>
+    </section>
+    <section id="footer">
+        <div class="img-container">
+            <div>
+                <a target="_blank" href="https://www.linkedin.com/in/premkiran7/"><img alt="linkedin logo"
+                        src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" />
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://twitter.com/premkiran97"><img alt="twitter logo"
+                        src="https://img.icons8.com/ios-filled/50/000000/twitter.png" />
+                </a>
+            </div>
+            <div>
+                <a target="_blank" id="profile-link" href="https://github.com/premkiran7"><img alt="github logo"
+                        src="https://img.icons8.com/ios-filled/48/000000/github.png" />
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://codepen.io/premkiran7"><img alt="codepen logo"
+                        src="https://img.icons8.com/ios-filled/48/000000/codepen.png" />
+                </a>
+            </div>
+        </div>
+        <p>Made with love, © Prem Kiran 2020, icons taken from <a href="https://icons8.com/">@icons8</a></p>
+    </section>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
